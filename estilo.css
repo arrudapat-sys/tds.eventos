@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TDS Eventos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #004aad;
+            border-bottom: 2px solid #004aad;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .event-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .event-card h3 {
+            color: #003680;
+            margin-top: 0;
+        }
+        .event-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .event-info strong {
+            color: #004aad;
+        }
+        .whatsapp-link {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .whatsapp-link:hover {
+            background-color: #128c7e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Próximos Eventos</h2>
+
+        <div class="event-card">
+            <h3>Evento Exemplo: Lançamento do Produto X</h3>
+            <p><strong>Descrição:</strong> Um evento de grande porte para apresentar o novo produto da empresa ao mercado, com a presença de imprensa e investidores.</p>
+
+            <div class="event-info">
+                <div><strong>Tipo de Evento:</strong> RSVP</div>
+                <div><strong>Data Prevista:</strong> 15/11/2025</div>
+                <div><strong>Cachê Estimado:</strong> R$ 350,00</div>
+                <div><strong>Agência:</strong> Agência Alpha</div>
+                <div><strong>Coordenação:</strong> Gabriela Souza</div>
+                <div><strong>Observações:</strong> Necessário traje social completo. Chegar com 1 hora de antecedência.</div>
+            </div>
+            
+            <p>Para confirmar sua presença ou ver mais detalhes, acesse a seção <a href="eventos.html" target="_parent">Eventos</a>.</p>
+        </div>
+
+        <div class="event-card">
+            <h3>Evento Exemplo: Confraternização de Fim de Ano</h3>
+            <p><strong>Descrição:</strong> Festa interna para celebrar as conquistas do ano, com jantar, música ao vivo e sorteio de brindes.</p>
+
+            <div class="event-info">
+                <div><strong>Tipo de Evento:</strong> Cede</div>
+                <div><strong>Data Prevista:</strong> 20/12/2025</div>
+                <div><strong>Cachê Estimado:</strong> R$ 200,00 (Ajuda de Custo)</div>
+                <div><strong>Agência:</strong> Interno</div>
+                <div><strong>Coordenação:</strong> Gabriela Souza</div>
+                <div><strong>Observações:</strong> Evento mais informal. Confirmação obrigatória para controle de buffet.</div>
+            </div>
+            
+            <p>Para confirmar sua presença ou ver mais detalhes, acesse a seção <a href="eventos.html" target="_parent">Eventos</a>.</p>
+        </div>
+
+        <p>
+            Em caso de dúvidas urgentes sobre os eventos, entre em contato com o gerente:
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20os%20eventos%20da%20TDS%20Eventos." class="whatsapp-link" target="_blank">
+                Falar com o Gerente (WhatsApp)
+            </a>
+        </p>
+
+    </div>
+</body>
+</html>
