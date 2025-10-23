@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre/Localização - TDS Eventos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #004aad;
+            border-bottom: 2px solid #004aad;
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            position: relative;
+            height: 0;
+        }
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border: 0;
+        }
+        .whatsapp-link {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .whatsapp-link:hover {
+            background-color: #128c7e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="section">
+            <h2>Sobre a TDS Eventos</h2>
+            <p>A <strong>TDS Eventos</strong> é uma empresa dedicada à organização e gestão de eventos corporativos e sociais, oferecendo soluções completas desde o planejamento até a execução.</p>
+            <p>Nossa missão é conectar pessoas e criar experiências memoráveis, garantindo o sucesso de cada projeto com profissionalismo e dedicação.</p>
+            
+            <h3>Contato e Suporte</h3>
+            <p>Para dúvidas, suporte ou informações urgentes, entre em contato diretamente com o gerente responsável:</p>
+            <a href="https://wa.me/5511976417931?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20a%20TDS%20Eventos." class="whatsapp-link" target="_blank">
+                Falar com o Gerente (WhatsApp)
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Localização</h2>
+            <p>Nosso escritório central está localizado em:</p>
+            <p><strong>Endereço Exemplo:</strong> Rua das Flores, 123 - Centro - São Paulo/SP</p>
+            
+            <div class="map-container">
+                <!-- Exemplo de iframe do Google Maps. O usuário pode substituir pelo endereço real. -->
+                <!-- Para gerar um novo iframe: 1. Vá ao Google Maps. 2. Busque o endereço. 3. Clique em "Compartilhar". 4. Clique em "Incorporar mapa". 5. Copie o HTML do iframe. -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0673410520265!2d-46.63330948446153!3d-23.56826696752003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c83699b0c9%3A0x66c8e3e4d9c7e0f2!2sAv.%20Paulista%2C%201578%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-200!5e0!3m2!1spt-BR!2sbr!4v1635000000000!5m2!1spt-BR!2sbr" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
