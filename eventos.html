@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - TDS Eventos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #004aad;
+            border-bottom: 2px solid #004aad;
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .form-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        h3 {
+            color: #003680;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+        .form-row > div {
+            flex: 1;
+        }
+        button {
+            background-color: #004aad;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005eff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Seção para Cadastro de Novo Evento (Gerente/Admin) -->
+        <div class="form-section">
+            <h2>Cadastro de Novo Evento</h2>
+            <form action="#" method="POST">
+                
+                <label for="nome_evento">Nome do Evento:</label>
+                <input type="text" id="nome_evento" name="nome_evento" required>
+
+                <div class="form-row">
+                    <div>
+                        <label for="data_inicial">Data Inicial:</label>
+                        <input type="date" id="data_inicial" name="data_inicial" required>
+                    </div>
+                    <div>
+                        <label for="data_final">Data Final:</label>
+                        <input type="date" id="data_final" name="data_final">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label for="tipo_evento">Tipo de Evento:</label>
+                        <select id="tipo_evento" name="tipo_evento" required>
+                            <option value="">Selecione</option>
+                            <option value="RSVP">RSVP</option>
+                            <option value="Cede">Cede</option>
+                            <option value="RSVP + Crede">RSVP + Crede</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cache">Valor do Cachê (R$):</label>
+                        <input type="number" id="cache" name="cache" min="0" step="0.01" required>
+                    </div>
+                </div>
+
+                <label for="descricao">Descrição do Evento:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+                <button type="submit">Cadastrar Evento</button>
+            </form>
+        </div>
+
+        <!-- Seção para Confirmação de Presença (Funcionário) -->
+        <div class="form-section">
+            <h2>Confirmação de Presença em Evento</h2>
+            <form action="#" method="POST">
+                
+                <label for="evento_selecionado">Selecione o Evento:</label>
+                <select id="evento_selecionado" name="evento_selecionado" required>
+                    <option value="">Selecione o Evento</option>
+                    <!-- Exemplos de Eventos -->
+                    <option value="evento1">Lançamento do Produto X - 15/11/2025</option>
+                    <option value="evento2">Confraternização de Fim de Ano - 20/12/2025</option>
+                </select>
+
+                <label for="nome_funcionario">Seu Nome Completo:</label>
+                <input type="text" id="nome_funcionario" name="nome_funcionario" required>
+                
+                <button type="submit">Confirmar Presença</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
